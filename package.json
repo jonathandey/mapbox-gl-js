@@ -166,7 +166,7 @@
     "codegen": "tsx ./build/generate-style-code.ts && tsx ./build/generate-struct-arrays.ts",
     "build-typed-style-spec": "tsx ./build/generate-typed-style-spec.ts",
     "tsc": "tsc --project tsconfig.json",
-    "prepare": "npm run build-prod"
+    "prepare": "npm run build-prod-min && npm run build-prod && npm run build-csp && npm run build-css && npm run build-style-spec"
   },
   "files": [
     "dist/mapbox-gl*",
